@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 15px 0 5px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #27ae60;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      padding: 10px 14px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  🛒 Mi Tienda Online
+</header>
+
+<div class="container">
+
+  <h2>Productos Destacados</h2>
+
+  <div class="product-grid">
+
+    <!-- Producto 1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Auriculares">
+      <h3>Auriculares Gamer</h3>
+      <p class="price">$25.000</p>
+      <button class="btn">Comprar</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155223168a" alt="Reloj">
+      <h3>Reloj SmartWatch</h3>
+      <p class="price">$40.000</p>
+      <button class="btn">Comprar</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Zapatillas">
+      <h3>Zapatillas Urbanas</h3>
+      <p class="price">$30.000</p>
+      <button class="btn">Comprar</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Mochila">
+      <h3>Mochila Deportiva</h3>
+      <p class="price">$15.000</p>
+      <button class="btn">Comprar</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2025 Mi Tienda Online — Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
